@@ -10,14 +10,16 @@ def my_counter():
     return True 
 
 def main():
-    lib = cdll.LoadLibrary( './libtest.so' )
+    libtest = cdll.LoadLibrary( './libtest.so' )
+    libexample = cdll.LoadLibrary( './libexample.so' )
     thread_array = {} 
     start_time = time.time() 
     for tid in range( 2 ): 
-        t = Thread( target = lib.test ) 
+        t = Thread( target = libexample.test ) 
         t.start() 
         t.join() 
     end_time = time.time() 
     print( "Total time: {}".format( end_time - start_time ) ) 
+    
 if __name__ == '__main__': 
     main()
