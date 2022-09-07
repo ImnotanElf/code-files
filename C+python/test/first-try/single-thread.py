@@ -1,7 +1,8 @@
 #! /usr/bin/python
 from ctypes import *
 from threading import Thread 
-import time 
+import time
+import libexample
 
 def my_counter(): 
     i = 0 
@@ -11,7 +12,7 @@ def my_counter():
 
 def main():
     libtest = cdll.LoadLibrary( './libtest.so' )
-    libexample = cdll.LoadLibrary( './libexample.so' )
+    # libexample = cdll.LoadLibrary( './libexample.so' )
     thread_array = {} 
     start_time = time.time() 
     for tid in range( 2 ): 
@@ -20,6 +21,6 @@ def main():
         t.join() 
     end_time = time.time() 
     print( "Total time: {}".format( end_time - start_time ) ) 
-    
+
 if __name__ == '__main__': 
     main()
