@@ -1,0 +1,7 @@
+/Users/xsl/Desktop/code-files/C+python/test/first-try/compile-dylib/build/CMakeFiles/edit_cache.dir
+/Users/xsl/Desktop/code-files/C+python/test/first-try/compile-dylib/build/CMakeFiles/rebuild_cache.dir
+/Users/xsl/Desktop/code-files/C+python/test/first-try/compile-dylib/build/src/CMakeFiles/edit_cache.dir
+/Users/xsl/Desktop/code-files/C+python/test/first-try/compile-dylib/build/src/CMakeFiles/rebuild_cache.dir
+/Users/xsl/Desktop/code-files/C+python/test/first-try/compile-dylib/build/src/hellolib/CMakeFiles/hello.dir
+/Users/xsl/Desktop/code-files/C+python/test/first-try/compile-dylib/build/src/hellolib/CMakeFiles/edit_cache.dir
+/Users/xsl/Desktop/code-files/C+python/test/first-try/compile-dylib/build/src/hellolib/CMakeFiles/rebuild_cache.dir

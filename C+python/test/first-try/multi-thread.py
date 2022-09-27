@@ -8,11 +8,11 @@ def my_counter():
         i = i + 1 
     return True 
 def main():
-    lib = cdll.LoadLibrary( './libtest.so' ) 
+    libhello = cdll.LoadLibrary( './compile-dylib/build/lib/libhello.dylib' )
     thread_array = {} 
     start_time = time.time() 
     for tid in range( 2 ): 
-        t = Thread( target = lib.test ) 
+        t = Thread( target = libhello.HelloFunc ) 
         t.start() 
         thread_array[ tid ] = t 
     for i in range( 2 ): 

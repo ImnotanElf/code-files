@@ -1,0 +1,3 @@
+/Users/xsl/Desktop/code-files/C+python/test/gdal-test/dylib/build/CMakeFiles/gdal-test.dir
+/Users/xsl/Desktop/code-files/C+python/test/gdal-test/dylib/build/CMakeFiles/edit_cache.dir
+/Users/xsl/Desktop/code-files/C+python/test/gdal-test/dylib/build/CMakeFiles/rebuild_cache.dir

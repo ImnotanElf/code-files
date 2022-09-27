@@ -2,21 +2,15 @@
 from ctypes import *
 from threading import Thread 
 import time
-import libexample
-
-def my_counter(): 
-    i = 0 
-    for _ in range( 1_0000_0000 ): 
-        i = i + 1 
-    return True 
 
 def main():
-    libtest = cdll.LoadLibrary( './libtest.so' )
-    # libexample = cdll.LoadLibrary( './libexample.so' )
+    libhello = cdll.LoadLibrary( './compile-dylib/build/lib/libhello.dylib' )
+    libgdal = cdll.LoadLibrary( '/Users/xsl/Desktop/code-files/CMake/test/gdal-test/build/libgdal-test.dylib' )
+    print( type( libhello ) )
     thread_array = {} 
     start_time = time.time() 
     for tid in range( 2 ): 
-        t = Thread( target = libexample.test ) 
+        t = Thread( target = libgdal.print_line ) 
         t.start() 
         t.join() 
     end_time = time.time() 
